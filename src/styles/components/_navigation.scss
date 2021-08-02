@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.navbar {
+  background-color: #0a3e64;
+  width: 100%;
+  height: 75px;
+  text-decoration: none;
+
+  #navbarUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+  li {
+    padding: 1rem 0 1rem 0.4rem;
+    font-size: 1.3rem;
+    padding: 10px;
+    padding-left: 25px;
+    margin-top: 17px;
+
+    span:hover {
+      color: hsl(205, 98%, 51%);
+      transition: 0.2s;
+    }
+    &:hover i {
+      transform: translate(3px, 3px);
+    }
+    i {
+      margin-top: 2px;
+      position: absolute;
+      font-size: 0.95rem;
+      transform: translateY(3px);
+      transition: 0.2s ease;
+    }
+
+    span {
+      color: rgba(255, 255, 255, 0.8);
+      margin-left: 25px;
+    }
+
+    .navActive {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .panierAndAccount {
+    right: 0;
+    margin-right: 50px;
+    position: absolute;
+    display: flex;
+  }
+
+  .nav-menu-men {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    margin-top: 23px;
+    background-color: white;
+    transition: 0.5s;
+    #men-ul {
+      margin-left: 250px;
+
+      h3 {
+        margin: 10px;
+      }
+      li {
+        padding: 10px;
+      }
+      p:hover {
+        color: #0296ff;
+      }
+
+      .textNav:hover {
+        color: #0296ff;
+      }
+    }
+  }
+  .ulActive {
+    color: rgba(255, 0, 0, 0.8);
+  }
+}
+.nav-menu-women {
+  left: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  margin-top: 23px;
+  background-color: white;
+  transition: 0.5s;
+  #women-ul {
+    margin-left: 250px;
+
+    h3 {
+      margin: 10px;
+    }
+    li {
+      padding: 10px;
+    }
+    p:hover {
+      color: #0296ff;
+    }
+
+    .textNav:hover {
+      color: #0296ff;
+    }
+  }
+  .ulActive {
+    color: rgba(255, 0, 0, 0.8);
+  }
+}

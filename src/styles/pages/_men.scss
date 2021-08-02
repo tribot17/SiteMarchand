@@ -1,0 +1,309 @@
+.men {
+  height: 100vh;
+  background-color: rgb(255, 248, 239);
+  background-color: #f4fdfd;
+
+  .men-header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .men-product {
+    border: 5px solid rgb(210, 253, 255);
+    border-radius: 50px;
+  }
+  //--------------------------------------Home promotion bar
+  .home-promotions {
+    border: 5px solid rgb(210, 253, 255);
+    margin: 50px auto;
+    width: 95%;
+    border-radius: 15px;
+
+    h2 {
+      padding: 10px 10px 0;
+    }
+    ul {
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+    }
+
+    .display-promotions {
+      height: 85%;
+    }
+    .home-promotions-card {
+      margin: 25px auto;
+      height: 330px;
+      width: 400px;
+      border-radius: 25px;
+      background-color: #dadffa;
+      box-shadow: 5px 5px 5px #0000005d;
+
+      &:hover {
+        transform: translate(-3px, 3px);
+        transition: 0.3s;
+      }
+      .displayPromOrNews {
+        padding: 10px;
+        text-align: center;
+
+        .inside {
+          box-shadow: inset 4px 4px 10px 0px #00000049,
+            5px 5px 15px 5px rgba(0, 0, 0, 0);
+          background-color: #ffffffa8;
+          border-radius: 25px;
+          padding-bottom: 10px;
+        }
+        img {
+          margin-left: 5px;
+          padding: 5px;
+          border-radius: 25px;
+          width: 70%;
+          height: 250px;
+        }
+        span {
+          margin-left: 10px;
+          text-decoration: line-through;
+          padding: 10px;
+        }
+        i {
+          border: 1px solid black;
+          padding: 5px;
+          border-radius: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+.displayMenProduct {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+  .displayMenCard {
+    margin: 20px auto;
+    height: 500px;
+    width: 550px;
+    border-radius: 25px;
+    background-color: #cdf5f2b6;
+    box-shadow: 5px 5px 5px #4b8a86;
+
+    &:hover {
+      transform: translate(-3px, 3px);
+      transition: 0.3s;
+    }
+    .displayPromOrNews {
+      padding: 10px;
+      text-align: center;
+
+      .inside {
+        box-shadow: inset 4px 4px 10px 0px #02c4ff93,
+          5px 5px 15px 5px rgba(0, 0, 0, 0);
+        background-color: #ffffff83;
+        border-radius: 25px;
+        padding-bottom: 10px;
+      }
+      img {
+        margin-left: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        width: 350px;
+        height: 400px;
+      }
+      i {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 20px;
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid white;
+          transition: 0.5s;
+          background-color: #4b8a86;
+        }
+      }
+    }
+  }
+}
+
+//---------------------------------------------- Reponsive
+
+@media screen and (max-width: 1760px) {
+  .displayMenProduct {
+    .displayMenCard {
+      height: 400px;
+      width: 450px;
+      .displayPromOrNews {
+        height: 370px;
+        width: 420px;
+        margin-left: 10px;
+        img {
+          height: 290px;
+          width: 250px;
+        }
+        i {
+          margin: 3px;
+        }
+      }
+    }
+  }
+}
+
+//---------------------------------------------- 1500px
+
+@media screen and (max-width: 1500px) {
+  .home-news {
+    .home-promotions {
+      height: auto;
+
+      .display-promotions {
+        .home-promotions-card {
+          height: 200px;
+          width: 250px;
+          .displayPromOrNews {
+            height: 180px;
+            width: 230px;
+            margin-left: 10px;
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .displayMenProduct {
+    .displayMenCard {
+      height: 250px;
+      width: 300px;
+      .displayPromOrNews {
+        height: 250px;
+        width: 280px;
+        margin-left: 10px;
+        img {
+          height: 145px;
+          width: 120px;
+        }
+        i {
+          margin: 3px;
+        }
+      }
+    }
+  }
+}
+
+//---------------------------------------------- 1300px
+
+@media screen and (max-width: 1300px) {
+  .home-news {
+    .home-promotions {
+      height: auto;
+      .display-promotions {
+        .home-promotions-card {
+          height: 150px;
+          width: 150px;
+          .displayPromOrNews {
+            height: 130px;
+            width: 145px;
+            margin: 0;
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//---------------------------------------------- 980px
+
+@media screen and (max-width: 980px) {
+  .home-news {
+    .home-promotions {
+      .display-promotions {
+        ul {
+          display: grid;
+          grid-template-columns: 33% 33% 33%;
+          padding: 10px;
+        }
+        .home-promotions-card {
+          height: 200px;
+          width: 200px;
+          margin-top: 10px;
+
+          .displayPromOrNews {
+            height: 130px;
+            width: 200px;
+            img {
+              width: 150px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .displayMenProduct {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .displayMenCard {
+      .displayPromOrNews {
+        img {
+        }
+        i {
+        }
+      }
+    }
+  }
+}
+
+//---------------------------------------------- 700px
+
+@media screen and (max-width: 700px) {
+  .home-news {
+    .home-promotions {
+      .display-promotions {
+        ul {
+          grid-template-columns: 80%;
+          .home-promotions-card {
+            margin-top: 10px;
+            height: 300px;
+            width: 300px;
+            margin-top: 10px;
+            .displayPromOrNews {
+              height: 250px;
+              width: 300px;
+              img {
+                width: 200px;
+                height: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .displayMenProduct {
+    display: flex;
+    flex-direction: column;
+    .displayMenCard {
+      .displayPromOrNews {
+        img {
+        }
+        i {
+        }
+      }
+    }
+  }
+}

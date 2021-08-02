@@ -1,0 +1,32 @@
+.footer {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  text-align: center;
+
+  h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  ul {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  li {
+    margin: 30px;
+
+    i {
+      transform: scale(1.5);
+    }
+    i:hover {
+      transform: scale(1.7);
+      color: hsla(209, 75%, 62%, 0.986);
+      transition: 1s;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.home {
+  background-color: #eefff9e1;
+  //---------------------------Set image dislay
+  .home-image-header {
+    text-align: center;
+    background: url("../img/img1.jpg") no-repeat center/cover;
+    height: 90vh;
+  }
+
+  #flesh-droite {
+    position: absolute;
+    left: 0;
+    margin-top: 40vh;
+    margin-left: 20px;
+
+    &:hover {
+      transition: 0.5s;
+      transform: translate(-3px);
+      cursor: pointer;
+    }
+  }
+
+  #flesh-gauche {
+    position: absolute;
+    right: 0;
+    margin-top: 40vh;
+    margin-right: 20px;
+
+    &:hover {
+      transition: 0.5s;
+      transform: translate(3px);
+      cursor: pointer;
+    }
+  }
+
+  //---------------------------------------------Display prom bar
+  .home-promotions {
+    border: 2px solid rgb(81, 114, 116);
+    box-shadow: 10px 9px 5px #9ccac775;
+    margin: 50px auto;
+    width: 95%;
+    border-radius: 15px;
+
+    h2 {
+      padding: 10px 10px 0;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      padding: 20px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+    }
+
+    .display-promotions {
+      height: 85%;
+    }
+    .home-promotions-card {
+      margin: 25px auto;
+      height: 330px;
+      width: 400px;
+      border-radius: 25px;
+      background-color: #dadffa;
+      box-shadow: 5px 5px 5px #0000005d;
+
+      &:hover {
+        transform: translate(-3px, 3px);
+        transition: 0.3s;
+      }
+      .displayPromOrNews {
+        padding: 10px;
+        text-align: center;
+
+        .inside {
+          box-shadow: inset 4px 4px 10px 0px #00000049,
+            5px 5px 15px 5px rgba(0, 0, 0, 0);
+          background-color: #ffffffa8;
+          border-radius: 25px;
+          padding-bottom: 10px;
+        }
+        img {
+          margin-left: 5px;
+          padding: 5px;
+          border-radius: 25px;
+          width: 70%;
+          height: 250px;
+        }
+        span {
+          margin-left: 10px;
+          text-decoration: line-through;
+          padding: 10px;
+        }
+        i {
+          border: 1px solid black;
+          padding: 5px;
+          border-radius: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

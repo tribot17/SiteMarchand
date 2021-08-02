@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+$font-1: "Montserrat", cursive;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-1;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:visited {
+  color: black;
+}

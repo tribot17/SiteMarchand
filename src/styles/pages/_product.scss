@@ -1,0 +1,53 @@
+.displayProduct {
+  .displayProductInfo {
+    display: grid;
+    margin: 50px auto;
+    width: 80%;
+    grid-template-columns: 50% 50%;
+
+    img {
+      margin: 20px;
+      width: 90%;
+      // height: 300px;
+    }
+  }
+  .productInfo {
+    text-align: center;
+    margin: 14px auto;
+
+    h1 {
+      // margin-left: 50px;
+    }
+
+    h3 {
+      margin: 10px 0 10px;
+    }
+
+    .tailleAndBuy {
+      display: grid;
+
+      select {
+        margin: 20px auto;
+        width: 50%;
+      }
+    }
+
+    button {
+      width: 150px;
+      height: 36px;
+      border-radius: 18px;
+      background-color: #1c89ff;
+      border: solid 1px transparent;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      margin: 10px 125px 10px;
+      &:hover {
+        border-color: rgb(251, 3, 3);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
