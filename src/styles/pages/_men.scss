@@ -1,25 +1,30 @@
 .men {
-  height: 100vh;
   background-color: rgb(255, 248, 239);
   background-color: #f4fdfd;
 
-  .men-header {
-    padding: 20px;
-    text-align: center;
-  }
 
   .men-product {
     border: 5px solid rgb(210, 253, 255);
     border-radius: 50px;
   }
+
   //--------------------------------------Home promotion bar
+  .home-news{
+    height: 90vh;
+
+    
+  h1 {
+    padding: 20px;
+    text-align: center;
+  }
+  }
   .home-promotions {
-    border: 5px solid rgb(210, 253, 255);
-    margin: 50px auto;
+    margin: 25px auto;
     width: 95%;
     border-radius: 15px;
 
     h2 {
+      text-align: center;
       padding: 10px 10px 0;
     }
     ul {
@@ -80,6 +85,47 @@
           }
         }
       }
+    }
+  }
+  .displayProductPromotions {
+    position: relative;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+    margin-left: 25px;
+    border-radius: 25px;
+
+    .inside {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      font-size: 0.9rem;
+      img {
+        margin: auto;
+        width: 80%;
+        height: 75%;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+      .textProduct{
+        margin-top: 5px;
+        margin-left: 15px;
+        width: 85%;
+      }
+      i{
+        position: absolute;
+        bottom:0;
+        right: 0;
+        margin-bottom: 30px;
+        margin-right: 30px;
+      }
+    }
+
+    &:hover {
+      transform: translate(-3px, 3px);
+      transition: 0.3s;
     }
   }
 }

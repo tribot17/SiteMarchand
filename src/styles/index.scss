@@ -1,3 +1,9 @@
+.trait{
+    height: 1px;
+    width: 100%;
+    background-color: black
+}
+
 @import "./settings";
 @import "./components/navigation";
 @import "./components/footer.scss";

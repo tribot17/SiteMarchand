@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "./Navigation";
-import { clothData } from "../data/db";
+import { shoesData } from "../data/db";
 import { useParams } from "react-router";
 import { PanierRef } from "../data/firebaseConfig";
 import { useCollectionData } from "react-firebase-hooks/firestore";
@@ -12,7 +12,7 @@ const DisplayProduct = () => {
   const [taille, setTaille] = useState("");
   const [PanierData] = useCollectionData(PanierRef, { idField: "id" });
 
-  clothData.forEach((data) => {
+  shoesData.forEach((data) => {
     if (data.id === slug) {
       productData.push(data.name);
       productData.push(data.img1);
@@ -22,7 +22,6 @@ const DisplayProduct = () => {
   });
 
   const addToPanier = async () => {
-    console.log(taille);
     let existe = false;
     let quantToAdd = 0;
     PanierData.map((item) => {

@@ -10,21 +10,22 @@ const Home = () => {
     localStorage.setItem("id", uid);
     localStorage.setItem("connected", true);
   }
+
   return (
     <div className="home">
       <Navigation />
 
       <div className="home-image-header">
-        <div id="flesh-droite">
+        {/* <div id="flesh-droite">
           <i className="fas fa-arrow-left"></i>
         </div>
         <div id="flesh-gauche">
           <i className="fas fa-arrow-right"></i>
-        </div>
+        </div> */}
       </div>
 
       <div className="home-promotions">
-        <h2>Les dèrnières promotions</h2>
+        <h2>Les dernières promotions</h2>
 
         <div className="display-promotions">
           <ul>

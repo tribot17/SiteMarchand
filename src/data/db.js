@@ -1,4 +1,4 @@
-export const clothData = [
+const shoesData = [
   {
     id: "chassure1",
     name: "Chassure basse",
@@ -35,3 +35,6 @@ export const clothData = [
     description: "Chaussure basse blanche",
   },
 ];
+
+
+export {shoesData}
